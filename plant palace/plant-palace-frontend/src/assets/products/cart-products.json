@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Lilies",
+        "description": "This is a bouqet of Lilies.",
+        "itemPrice": 1000,
+        "total": 3000,
+        "selectedQuantity": 3,
+        "inStock": 5,
+        "imageUrl": "../../../../assets/images/plant-product.png"
+    },
+    {
+        "id": 2,
+        "name": "Roses",
+        "description": "This is a bouqet of red roses.",
+        "itemPrice": 200,
+        "total": 1000,
+        "selectedQuantity": 2,
+        "inStock": 4,
+        "imageUrl": "../../../../assets/images/plant-product.png"
+    },
+    {
+        "id": 3,
+        "name": "Brown Leather Gloves",
+        "description": "A pair of brown gardening gloves.",
+        "itemPrice": 400,
+        "total": 1050,
+        "selectedQuantity": 1,
+        "inStock": 4,
+        "imageUrl": "../../../../assets/images/equipment-product.png"
+    }
+]

@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="text-center m-5">
+        <form class="form-inline d-inline-block">
+            <input class="form-control mr-sm-2 form-control bg-primary border border-dark" type="search" placeholder="Search for {{category}}" aria-label="Search" style="width: 400px;">
+        </form>
+    </div>
+    <div class="text-center mb-3">
+        {{ type | uppercase }} > {{ category | uppercase }}
+    </div>
+    <div class="row m-5">
+        <app-product-list-item *ngFor="let product of products" [product]="product" [type]="type" [category]="category" class="col-md-4">
+        </app-product-list-item>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+[
+    {
+        "id": 0,
+        "name": "Brown Leather Gloves",
+        "description": "A pair of brown gardening gloves.",
+        "price": 400,
+        "quantity": 4,
+        "imageUrl": "../../../../assets/images/equipment-product.png"
+    },
+    {
+        "id": 1,
+        "name": "Black Gardening Gloves",
+        "description": "A pair of black gloves.",
+        "price": 450,
+        "quantity": 7,
+        "imageUrl": "../../../../assets/images/equipment-product.png"
+    }
+]

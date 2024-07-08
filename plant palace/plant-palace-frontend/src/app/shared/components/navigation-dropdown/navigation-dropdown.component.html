@@ -1,0 +1,5 @@
+<ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li *ngFor="let item of items">
+        <a class="dropdown-item" routerLink="/{{item.type}}/{{item.categoryLink}}" routerLinkActive="active-nav-buttons">{{ item.categoryName }}</a>
+    </li>
+</ul>

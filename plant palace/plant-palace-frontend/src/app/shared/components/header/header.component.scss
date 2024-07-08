@@ -1,0 +1,50 @@
+@import '../../../../styles.scss';
+
+.font-size {
+    font-size: larger;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+    background-color: $secondary !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:hover {
+    color: white;
+}
+
+.icon-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-style:hover {
+    color: white;
+}
+
+.active-buttons {
+    color: white !important;
+}
+
+.active-nav-buttons {
+    color: white !important;
+    background-color: $secondary !important;
+}
+
+@media (min-width: 992px) {
+    .content-left {
+        order: 1; /* Change the order of the content in the navbar while in desktop screen */
+    }
+
+    .icons-right {
+        order: 2; /* Change the order of the icons in the navbar while in desktop screen */
+    }
+}

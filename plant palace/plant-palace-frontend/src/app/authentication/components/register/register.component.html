@@ -1,0 +1,73 @@
+<div>
+    <div class="d-flex justify-content-center pt-4 my-5">
+        <h1>Reigster</h1>
+    </div>
+    <div class="m-3 mt-5">
+        <form [formGroup]="formGroup" (ngSubmit)="submit()">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="m-3 px-5 col-sm-6">
+                        <label for="firstName"><b>First Name</b></label>
+                        <input type="text" class="form-control bg-primary border border-dark"
+                            placeholder="Enter first name" name="firstName" required formControlName="firstName">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="m-3 px-5 col-sm-6">
+                        <label for="lastName"><b>Last Name</b></label>
+                        <input type="text" class="form-control bg-primary border border-dark"
+                            placeholder="Enter last name" name="lastName" required formControlName="lastName">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="m-3 px-5 col-sm-6">
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" class="form-control bg-primary border border-dark" placeholder="Enter email"
+                            name="email" required formControlName="email">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="m-3 px-5 col-sm-6">
+                        <label for="address"><b>Address</b></label>
+                        <input type="text" class="form-control bg-primary border border-dark" placeholder="Enter address"
+                            name="address" required formControlName="address">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="m-3 px-5 col-sm-6">
+                        <label for="city"><b>City</b></label>
+                        <input type="text" class="form-control bg-primary border border-dark" placeholder="Enter city"
+                            name="city" required formControlName="coty">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="m-3 px-5 col-sm-6">
+                        <label for="zipcode"><b>Zipcode</b></label>
+                        <input type="text" class="form-control bg-primary border border-dark" placeholder="Enter zipcode"
+                            name="zipcode" required formControlName="zipcode">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="m-3 px-5 col-sm-6">
+                        <label for="zipcode"><b>Telephone</b></label>
+                        <input type="phone" class="form-control bg-primary border border-dark" placeholder="Enter telephone"
+                            name="phone" required formControlName="phone">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="m-3 px-5 col-sm-6">
+                        <label for="password"><b>Password</b></label>
+                        <input type="password" class="form-control bg-primary border border-dark"
+                            placeholder="Enter Password" name="password" required formControlName="password">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="mt-5 mb-5 d-flex justify-content-center pt-4">
+                        <button type="submit" class="bg-dark text-center text-white shadow button px-4 py-2"
+                            routerLink="/login">Register</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

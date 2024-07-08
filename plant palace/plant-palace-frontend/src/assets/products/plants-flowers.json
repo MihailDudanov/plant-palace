@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Lilies",
+        "description": "This is a bouqet of Lilies.",
+        "price": 1000,
+        "quantity": 3,
+        "imageUrl": "../../../../assets/images/plant-product.png"
+    },
+    {
+        "id": 2,
+        "name": "Red Roses",
+        "description": "This is a bouqet of red roses.",
+        "price": 200,
+        "quantity": 5,
+        "imageUrl": "../../../../assets/images/plant-product.png"
+    },
+    {
+        "id": 3,
+        "name": "White Roses",
+        "description": "This is a bouqet of white roses.",
+        "price": 350,
+        "quantity": 3,
+        "imageUrl": "../../../../assets/images/plant-product.png"
+    },
+    {
+        "id": 4,
+        "name": "Sunflowers",
+        "description": "This is a bouqet of sunflowers.",
+        "price": 450,
+        "quantity": 2,
+        "imageUrl": "../../../../assets/images/plant-product.png"
+    },
+    {
+        "id": 5,
+        "name": "Daisies",
+        "description": "This is a bouqet of fresh daisies.",
+        "price": 200,
+        "quantity": 19,
+        "imageUrl": "../../../../assets/images/plant-product.png"
+    },
+    {
+        "id": 6,
+        "name": "Dandelions",
+        "description": "This is a bouqet of dandelions.",
+        "price": 350,
+        "quantity": 0,
+        "imageUrl": "../../../../assets/images/plant-product.png"
+    }
+]

@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+// Custom colors
+$primary: #7fd678;
+$secondary: #569451;
+$light: #CFD3D2;
+
+// Importing custom font
+@font-face {
+    font-family: 'Inika';
+    src: url('./assets/fonts/Inika/Inika-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom-font {
+    font-family: 'Inika';
+}
+
+.icon-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-style:hover {
+    color: white;
+}
+
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+@import '@fortawesome/fontawesome-free/css/all.css';
+

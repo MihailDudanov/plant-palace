@@ -1,0 +1,41 @@
+.main-background {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-image:
+        url("../../../../assets/images/about-us-plant.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 40%;
+}
+
+.overlay-text h1 {
+    font-size: 3rem;
+    /* Adjust as needed */
+}
+
+.overlay-text .about-us-text {
+    font-size: 1.25rem;
+    /* Adjust as needed */
+}
+
+.text-container {
+    width: 50%;
+}
+
+/* Media query for small screens */
+@media (max-width: 774px) {
+    .overlay-text h1 {
+        font-size: 2rem;
+        /* Smaller font size for mobile */
+    }
+
+    .overlay-text .about-us-text {
+        font-size: 1rem;
+        /* Smaller font size for mobile */
+    }
+
+    .text-container {
+        width: 80%;
+    }
+}

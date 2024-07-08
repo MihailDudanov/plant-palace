@@ -1,0 +1,53 @@
+<div class="container p-5 ">
+    <div class="title-container fs-4 py-3 mb-3">
+        {{ title }}
+    </div>
+
+    <div style="overflow-x: auto;">
+        <table class="w-100 my-3 fs-5">
+            <thead class="text-center">
+                <tr class="shadow bg-primary">
+                    <th scope="col" class="p-2">Product</th>
+                    <th scope="col" class="p-2">Description</th>
+                    <th scope="col" class="p-2">Price</th>
+                    <th scope="col" class="p-2">Quantity</th>
+                    <th scope="col" class="p-2">Total</th>
+                    <th scope="col" class="p-2">Remove</th>
+                </tr>
+            </thead>
+            <tbody class="text-center align-middle">
+                <tr *ngFor="let product of products" class="border-bottom border-dark ">
+                    <td><img [src]="product.imageUrl" class="img-fluid py-2" style="width: 100px;" /></td>
+                    <td>{{ product.description }}</td>
+                    <td>{{ product.itemPrice }} den.</td>
+                    <td class="text-center">
+                        <div class="w-75 bg-white shadow d-inline-block">
+                            <button class="btn" (click)="updateSelectedQuantity(-1, product.id)"
+                                [disabled]="product.selectedQuantity<=0" type="submit">-</button>
+                            {{ product.selectedQuantity }}
+                            <button class="btn" (click)="updateSelectedQuantity(1, product.id)"
+                                [disabled]="product.selectedQuantity>=product.inStock" type="submit">+</button>
+                        </div>
+                    </td>
+                    <td>{{ product.itemPrice * product.selectedQuantity }} den.</td>
+                    <td>
+                        <button type="button" (click)="deleteProduct(product.id)" class="btn text-danger">
+                            <span class="material-icons">delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="d-flex justify-content-end bg-primary-light p-4">
+        <span class="fs-4">Total price: {{ calculateTotalPrice()}}</span>
+    </div>
+
+    <div class="d-flex justify-content-end my-3">
+        <app-button buttonText="Order now" (click)="orderNow()"></app-button>
+    </div>
+    <div *ngIf="orderPlaced" class="text-center">
+        You sucessfully placed your order. Thank you for shopping with us.
+    </div>
+</div>

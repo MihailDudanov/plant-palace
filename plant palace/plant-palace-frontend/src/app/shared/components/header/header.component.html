@@ -1,0 +1,56 @@
+<header>
+    <a routerLink="/home"><img src="../../../../assets/images/logo.png" class="img-fluid" width="300"/></a>
+
+    <nav class="navbar navbar-expand-lg navbar-light p-0 bg-primary shadow font-size">
+        <div class="container-fluid">
+            <div class="d-flex m-auto icons-right">
+                <a class="icon-style d-flex mx-3 mx-lg-2 my-2 my-lg-0" routerLink="/login" routerLinkActive="active-buttons">
+                    <span class="material-icons">account_circle</span>
+                </a>
+
+                <a class="icon-style d-flex mx-3 mx-lg-2 my-2 my-lg-0" routerLink="/shopping-cart" routerLinkActive="active-buttons">
+                    <span class="material-icons">shopping_cart</span>
+                </a>
+
+                <button class="navbar-toggler bg-primary" type="button" aria-label="Toggle navigation"
+                    (click)="isCollapsed = !isCollapsed">
+                    <span class="material-icons">menu</span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-center content-left" id="navbarSupportedContent"
+                [ngbCollapse]="isCollapsed">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/home" routerLinkActive="active-nav-buttons">
+                            Home</a>
+                    </li>
+
+                    <li ngbDropdown>
+                        <a ngbDropdownToggle class="nav-link" id="plantsDropdown" role="button" routerLinkActive="active-nav-buttons" [routerLinkActiveOptions]="{exact: true}">
+                            Plants
+                        </a>
+
+                        <app-navigation-dropdown [items]="plantsDropdownItems"></app-navigation-dropdown>
+                    </li>
+
+                    <li ngbDropdown class="nav-item">
+                        <a ngbDropdownToggle class="nav-link" id="equipmentDropdown" role="button" routerLinkActive="active-nav-buttons" [routerLinkActiveOptions]="{exact: true}">
+                            Equipment
+                        </a>
+
+                        <app-navigation-dropdown [items]="equipmentDropdownItems"></app-navigation-dropdown>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/about-us" routerLinkActive="active-nav-buttons">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/contact-us" routerLinkActive="active-nav-buttons">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

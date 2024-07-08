@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row m-3">
+        <div class="col-md-4">
+            <div class="card m-5">
+                <img [src]="product.imageUrl" class="picsum-img-wrapper" alt="{{ product.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="m-5 py-5">
+                <div class="m-3">Description: <br /> {{ product.description }}</div>
+                <div class="border-bottom border-dark m-3"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="m-3">Price: <br /> {{ product.price }}</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="m-3">Quantity: <br /> <button class="btn btn-primary" type="submit"
+                                (click)="updateSelectedQuantity(-1)" [disabled]="selectedQuantity<=0">-</button>
+                            {{ selectedQuantity }} <button class="btn btn-primary" type="submit"
+                                (click)="updateSelectedQuantity(1)"
+                                [disabled]="selectedQuantity>=product.quantity">+</button>
+                            <br />
+                            In Stock: {{ product.quantity }}
+                        </div>
+
+                        <button class="btn btn-primary" (click)="addToCart()" [disabled]="selectedQuantity===0">Add to
+                            cart</button>
+                        <div *ngIf="isProductAdded">
+                            You placed your product in the shopping cart.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
